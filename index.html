@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertically Integrated Cannabis Companies 2025 - NJ, PA, DE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+        }
+        
+        .header {
+            background-color: #15803d;
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .header h1 {
+            font-size: 1.875rem;
+            font-weight: bold;
+        }
+        
+        .header p {
+            font-size: 0.875rem;
+            color: #bbf7d0;
+        }
+        
+        .export-btn {
+            background-color: white;
+            color: #15803d;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .export-btn:hover {
+            background-color: #f0fdf4;
+        }
+        
+        .export-btn.success {
+            background-color: #22c55e;
+            color: white;
+        }
+        
+        .tabs {
+            display: flex;
+            background-color: white;
+            border-bottom: 2px solid #e5e7eb;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .tab {
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            background-color: #f3f4f6;
+            color: #4b5563;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            background-color: #e5e7eb;
+        }
+        
+        .tab.active {
+            background-color: #16a34a;
+            color: white;
+            border-bottom: 3px solid #15803d;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        
+        .info-banner {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+        
+        .info-banner p {
+            font-size: 0.875rem;
+            color: #92400e;
+        }
+        
+        .table-container {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background-color: #16a34a;
+            color: white;
+        }
+        
+        th {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.875rem;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        tbody tr:hover {
+            background-color: #f0fdf4;
+        }
+        
+        .type-badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+        .type-recreational {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        
+        .type-medical {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .footer {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 1.5rem;
+        }
+        
+        .footer strong {
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div>
+                <h1>Vertically Integrated Cannabis Companies 2025</h1>
+                <p>Cultivation, Manufacturing & Retail - NJ, PA, DE</p>
+            </div>
+            <button class="export-btn" onclick="copyToClipboard()">
+                <span>📋</span>
+                <span id="btnText">Copy CSV Data</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab('NJ')">New Jersey (12)</button>
+        <button class="tab" onclick="switchTab('PA')">Pennsylvania (15)</button>
+        <button class="tab" onclick="switchTab('DE')">Delaware (8)</button>
+    </div>
+    
+    <div class="container">
+        <div class="info-banner">
+            <p><strong>🌱 Vertically Integrated Operations:</strong> These dispensaries are owned by companies that grow, manufacture, and retail their own cannabis products.</p>
+        </div>
+        
+        <div class="table-container">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th style="min-width: 280px;">Business Name</th>
+                            <th style="min-width: 180px;">Address</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Zip</th>
+                            <th>Phone Number</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p><strong>Total Vertically Integrated Dispensaries:</strong> 35 locations • <strong>NJ: 12</strong> • PA: 15 • DE: 8 • October 2025</p>
+    </div>
+
+    <script>
+        const data = {
+            NJ: [
+                ["Rise Dispensary Bloomfield", "26-48 Bloomfield Ave", "Bloomfield", "NJ", "07003", "(973) 327-3442", "Medical & Recreational"],
+                ["Curaleaf Bordentown", "191 U.S. 130", "Bordentown", "NJ", "08505", "(609) 400-2455", "Medical & Recreational"],
+                ["Curaleaf Edgewater Park", "4237 U.S. 130", "Edgewater Park", "NJ", "08010", "(609) 232-7690", "Medical & Recreational"],
+                ["Curaleaf Bellmawr", "640 Creek Road", "Bellmawr", "NJ", "08031", "(856) 933-8700", "Medical & Recreational"],
+                ["Zen Leaf Lawrence", "3526 Brunswick Pike", "Lawrence Township", "NJ", "08648", "(609) 557-9825", "Medical & Recreational"],
+                ["Zen Leaf Neptune", "2100 Route 66", "Neptune Township", "NJ", "07753", "(732) 466-1203", "Medical & Recreational"],
+                ["Zen Leaf Elizabeth", "117 Spring St", "Elizabeth", "NJ", "07201", "(908) 409-9810", "Medical & Recreational"],
+                ["Ascend Cannabis Fort Lee", "461-469 West St", "Fort Lee", "NJ", "07024", "(973) 200-7696", "Medical & Recreational"],
+                ["Ascend Cannabis Rochelle Park", "174 NJ-17", "Rochelle Park", "NJ", "07662", "(973) 370-3150", "Medical & Recreational"],
+                ["The Botanist Williamstown", "2090 N Black Horse Pike", "Williamstown", "NJ", "08094", "(856) 478-3530", "Medical & Recreational"],
+                ["The Cannabist Vineland", "1062 N. Delsea Dr", "Vineland", "NJ", "08360", "(856) 213-9445", "Medical & Recreational"],
+                ["Breakwater Cranbury", "2 Corporate Dr Ste E", "Cranbury", "NJ", "08512", "(732) 703-7300", "Medical"]
+            ],
+            PA: [
+                ["Trulieve Philadelphia", "300 Packer Ave", "Philadelphia", "PA", "19148", "(215) 647-0656", "Medical"],
+                ["Trulieve Philadelphia Center City", "1222 Arch St", "Philadelphia", "PA", "19107", "(267) 946-1470", "Medical"],
+                ["Curaleaf Morton", "409 Baltimore Pike", "Morton", "PA", "19070", "(484) 452-4586", "Medical"],
+                ["Curaleaf Philadelphia (City Ave)", "5058 City Ave", "Philadelphia", "PA", "19131", "(610) 934-2291", "Medical"],
+                ["Curaleaf Philadelphia (Passyunk)", "1125-1127 Passyunk Ave", "Philadelphia", "PA", "19147", "(267) 691-0565", "Medical"],
+                ["Sunnyside Philadelphia", "4502 City Ave", "Philadelphia", "PA", "19131", "(267) 603-1918", "Medical"],
+                ["Rise King of Prussia", "445A W Dekalb Pike", "King of Prussia", "PA", "19406", "(610) 596-9266", "Medical"],
+                ["Zen Leaf Abington", "1752 Old York Rd", "Abington", "PA", "19001", "(215) 967-2717", "Medical"],
+                ["Zen Leaf Malvern", "249 Planebrook Rd", "Malvern", "PA", "19355", "(610) 735-7156", "Medical"],
+                ["Organic Remedies Enola", "4425 Valley Road", "Enola", "PA", "17025", "(717) 562-7758", "Medical"],
+                ["Organic Remedies Chambersburg", "900 Wayne Avenue", "Chambersburg", "PA", "17201", "(717) 251-2321", "Medical"],
+                ["Organic Remedies York", "1098 Haines Road", "York", "PA", "17402", "(717) 699-7083", "Medical"],
+                ["Beyond/Hello Johnstown", "419 Lincoln St", "Johnstown", "PA", "15901", "(814) 535-4520", "Medical"],
+                ["Beyond/Hello Philadelphia Center City", "1206 Sansom St", "Philadelphia", "PA", "19107", "(267) 514-8550", "Medical"],
+                ["Beyond/Hello Bristol", "2412 Durham Rd", "Bristol", "PA", "19007", "(215) 785-3000", "Medical"]
+            ],
+            DE: [
+                ["Thrive Cannabis Wilmington", "37 Germay Drive", "Wilmington", "DE", "19804", "(302) 543-2100", "Medical & Recreational"],
+                ["First State Compassion Lewes", "12000 Old Vine Blvd, Unit 102", "Lewes", "DE", "19958", "(302) 281-4888", "Medical & Recreational"],
+                ["Columbia Care Wilmington", "5606 Concord Pike", "Wilmington", "DE", "19803", "(302) 416-4402", "Medical & Recreational"],
+                ["Columbia Care Smyrna", "200 S. DuPont Blvd", "Smyrna", "DE", "19977", "(302) 297-8614", "Medical & Recreational"],
+                ["Columbia Care Rehoboth Beach", "36725 Bayside Outlet Dr, Suite 760", "Rehoboth Beach", "DE", "19971", "(302) 212-0033", "Medical & Recreational"],
+                ["The Farm Felton", "105 Irish Hill Rd", "Felton", "DE", "19943", "(302) 469-5470", "Medical & Recreational"],
+                ["The Farm New Castle", "240 S. Dupont Hwy", "New Castle", "DE", "19720", "(302) 327-0393", "Medical & Recreational"],
+                ["The Farm Frankford", "34164 Dupont Blvd", "Frankford", "DE", "19945", "(302) 537-9333", "Medical & Recreational"]
+            ]
+        };
+        
+        let currentState = 'NJ';
+        
+        function renderTable(state) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            data[state].forEach((row, index) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td style="color: #6b7280; font-weight: 500;">${index + 1}</td>
+                    <td style="font-weight: 500; color: #111827;">${row[0]}</td>
+                    <td style="color: #374151;">${row[1]}</td>
+                    <td>${row[2]}</td>
+                    <td style="font-weight: bold; color: #15803d;">${row[3]}</td>
+                    <td>${row[4]}</td>
+                    <td style="color: #0369a1; font-weight: 500;">${row[5]}</td>
+                    <td>
+                        <span class="type-badge ${row[6].includes('Recreational') ? 'type-recreational' : 'type-medical'}">
+                            ${row[6]}
+                        </span>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+        
+        function switchTab(state) {
+            currentState = state;
+            
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            renderTable(state);
+        }
+        
+        function copyToClipboard() {
+            const allData = [...data.NJ, ...data.PA, ...data.DE];
+            const headers = ['Business Name', 'Address', 'City', 'State', 'Zip Code', 'Phone Number', 'Type'];
+            
+            let csvContent = headers.join(',') + '\n';
+            allData.forEach(row => {
+                csvContent += row.map(cell => `"${cell}"`).join(',') + '\n';
+            });
+            
+            navigator.clipboard.writeText(csvContent).then(() => {
+                const btn = document.querySelector('.export-btn');
+                const btnText = document.getElementById('btnText');
+                btn.classList.add('success');
+                btnText.textContent = '✅ Copied to Clipboard!';
+                
+                setTimeout(() => {
+                    btn.classList.remove('success');
+                    btnText.textContent = 'Copy CSV Data';
+                }, 3000);
+            }).catch(err => {
+                alert('Failed to copy. Please try selecting and copying the table manually.');
+            });
+        }
+        
+        renderTable('NJ');
+    </script>
+</body>
+</html>
